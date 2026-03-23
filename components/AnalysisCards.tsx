@@ -1,5 +1,5 @@
 "use client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Copy } from "lucide-react";
 
 export function NarrativeCard({ narrative }: { narrative: { story: string; rootCause: string } }) {
