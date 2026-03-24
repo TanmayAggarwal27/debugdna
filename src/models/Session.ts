@@ -68,7 +68,6 @@ const SessionSchema = new Schema<ISession>(
 );
 
 // ── Indexes ──────────────────────────────────────────────────
-SessionSchema.index({ sessionId: 1 });
 SessionSchema.index({ createdAt: -1 });
 
 // ── Export ────────────────────────────────────────────────────

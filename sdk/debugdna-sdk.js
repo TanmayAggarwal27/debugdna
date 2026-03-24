@@ -189,7 +189,8 @@
 
       try {
         if (typeof navigator.sendBeacon === 'function') {
-          navigator.sendBeacon(this.endpoint, payload);
+          const blob = new Blob([payload], { type: 'application/json' });
+          navigator.sendBeacon(this.endpoint, blob);
         } else if (window.fetch) {
           window.fetch(this.endpoint, {
             method: 'POST',
